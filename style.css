@@ -1,0 +1,191 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 4em;
+}
+
+.slide {
+    background-color: rgb(50, 49, 49);
+    padding: 2em;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+    flex-direction: column;
+    color: rgb(182, 179, 179) /* Stack content for simplicity */
+}
+
+.slide#home {
+    flex-direction: row;
+    text-align: left;
+}
+
+.slide .content {
+    padding: 1em;
+}
+
+.slide .image {
+    padding: 1em;
+    text-align: center;
+}
+
+.slide .image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.slide h1 {
+    font-size: 2em;
+    margin-bottom: 0.2em;
+}
+
+.slide h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.slide .buttons button {
+    padding: 0.6em 1.2em;
+    margin-right: 0.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.slide .buttons .primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.slide .buttons .secondary {
+    background-color: #dc3545;
+    color: white;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+    color: black;
+    
+}
+
+.skills-list li {
+    background-color: #ffffff;
+    padding: 0.3em 0.6em;
+    border-radius: 3px;
+}
+
+.project-item {
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.project-item h3 {
+    margin-bottom: 0.5em;
+}
+
+.project-item img {
+    max-width: 80%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 0.3em;
+}
+
+.project-item .code-caption {
+    font-size: 0.8em;
+    color: #777;
+}
+
+.certificate-placeholder {
+    text-align: center;
+}
+
+.slide#contact form {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.slide#contact .form-group {
+    margin-bottom: 0.8em;
+}
+
+.slide#contact label {
+    display: block;
+    margin-bottom: 0.2em;
+    font-weight: bold;
+}
+
+.slide#contact input[type="text"],
+.slide#contact input[type="tel"],
+.slide#contact input[type="email"] {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.slide#contact .submit-button {
+    background-color: #28a745;
+    color: white;
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .slide#home {
+        flex-direction: column;
+        text-align: center;
+    }
+    .slide .image {
+        margin-top: 1em;
+    }
+}
